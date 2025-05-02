@@ -5,7 +5,7 @@ body {
   color: #e0e0e0; /* Texto claro */
   justify-content: center; /* Centraliza horizontalmente */
   align-items: center; /* Centraliza verticalmente */
-  background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0, 0.7),rgba(0, 0, 0, 0.856)), url('../Home/Assets/illustration-anime-city.jpg');
+  background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0, 0.7),rgba(0, 0, 0, 0.856)), url('../Assets/illustration-anime-city.jpg');
   background-size: cover; /* Cobre toda a tela */   
   background-repeat: no-repeat; /* Não repete a imagem */
   background-attachment: fixed; /* Fixa a imagem de fundo */
@@ -37,8 +37,6 @@ header {
   box-shadow: 0 2px 4px rgba(146, 146, 146, 0); /* Sombra sutil */
   border-radius: 0 0 20px 20px; /* Bordas arredondadas na parte inferior */
   padding: 10px 20px; /* Espaçamento interno */
-
-
 }
 
 header .container {
@@ -233,6 +231,54 @@ footer {
   width: 75%; /* Largura total */
   height: auto; /* Altura automática para manter a proporção */
 
+}
+
+.header-image {
+  position: relative;
+  width: 100px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.header-image img {
+  width: 100%;
+  height: auto;
+}
+
+.anime-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.anime-list ul li {
+  background-color: #000;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  width: 150px;
+  text-align: center;
+}
+
+.anime-list ul li:hover {
+  transform: translateY(-10px);
+}
+
+.anime-list ul li img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px 8px 0 0;
+}
+
+.anime-list ul li h4 {
+  color: #fff;
+  padding: 10px;
+  margin: 0;
 }
 
 
