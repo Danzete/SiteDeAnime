@@ -1,0 +1,240 @@
+body {
+  font-family: 'Roboto', sans-serif; /* Fonte semelhante */
+  margin: 0;
+  background-color: #000000; /* Fundo escuro */
+  color: #e0e0e0; /* Texto claro */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0, 0.7),rgba(0, 0, 0, 0.856)), url('../Login/Assets/illustration-anime-city.jpg');
+  background-size: cover; /* Cobre toda a tela */   
+  background-repeat: no-repeat; /* Não repete a imagem */
+  background-attachment: fixed; /* Fixa a imagem de fundo */
+  background-position: center; /* Centraliza a imagem de fundo */
+  height: 100vh; /* Altura total da tela */
+  width: 90vw; /* Largura total da tela */
+ 
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  display: right;
+  justify-content: space-between;
+  align-items: center; /* Alinha os itens verticalmente ao centro */ 
+  padding: 20px 0;  
+  background-color: #00000009;
+  z-index: 100; /* Coloca o cabeçalho acima de outros elementos */
+  transition: background-color 0.3s ease; /* Transição suave para a cor de fundo */
+  color: #fff; /* Cor do texto */
+  font-size: 1.2em; /* Tamanho da fonte */  
+  font-weight: bold; /* Negrito */
+  position: right; 
+  width: 100%; /* Largura total */  
+  box-shadow: 0 2px 4px rgba(146, 146, 146, 0); /* Sombra sutil */
+  border-radius: 0 0 20px 20px; /* Bordas arredondadas na parte inferior */
+  padding: 10px 20px; /* Espaçamento interno */
+
+
+}
+
+header .container {
+  display: flex;
+  align-items: right;
+  justify-content: space-between; /* Espaça os itens igualmente (logo, título, imagem) */
+  bottom: 0;
+  align-items: center; /* Alinha os itens verticalmente ao centro */  
+  justify-content: space-between; /* Espaça os itens igualmente (logo, título, imagem) */
+  padding: 0 20px; /* Espaçamento interno */
+}
+
+.logo a {
+  display: block;
+  height: auto; /* Altura automática para manter a proporção */
+  width: auto; /* Largura automática para manter a proporção */
+  text-decoration: none; /* Remove o sublinhado do link */
+}
+
+.logo img {
+  height: 100px; /* Ajuste a altura do logo */
+  align-items: center; /* Alinha os itens verticalmente ao centro */ 
+  
+}
+.logo {
+  margin-right: 20px; /* Espaçamento entre o logo e o menu */
+  display: flex;
+  align-items: center; /* Alinha o logo verticalmente */
+  justify-content: center; /* Alinha o logo horizontalmente */
+  
+}
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 2em;
+}
+
+nav a {
+  color: #ccc;
+  text-decoration: none;
+  transition: color 0.3s ;
+}
+
+nav a:hover {
+  color: #f44336; 
+}
+
+main {
+  padding: 20px 0;
+}
+
+.hero {
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  margin-bottom: 30px;
+  height: auto;
+}
+
+.hero .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-content {
+  flex: 1;
+  padding-right: 20px;
+}
+
+.hero h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  color: #ddd;
+}
+
+.botao {
+  display: inline-block;
+  background-color: #f44336; /* Cor de destaque */
+  color: #fff;
+  padding: 12px 25px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: transform 0.6s ease, background-color 0.3s ease, box-shadow 0.6s ease; /* Transição suave para todos os estados */
+}
+
+.botao:hover {
+  background-color: #d32f2f;
+  transform: scale(1.2); /* Aumenta o botão ao passar o mouse */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra ao passar o mouse */
+  cursor: pointer; /* Muda o cursor para indicar que é clicável */
+  text-decoration: none; /* Remove o sublinhado ao passar o mouse */
+}
+
+.botao.destaque {
+  font-size: 1.2em;
+}
+
+.hero-image {
+  flex: 1;
+  text-align: center;
+}
+
+.hero-image img {
+  max-width: 100%;
+  height: auto;
+  height: 50%;
+  border-radius: 50px; 
+  bottom: 10px;
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0);
+  transition: transform 0.3s ease;  
+
+
+}
+
+.destaques {
+  padding: 30px 0;
+}
+
+.destaques h3 {
+  color: #fff;
+  margin-bottom: 20px;
+  font-size: 1.8em;
+}
+
+.lista-animes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 20px;
+}
+
+.card-anime {
+  background-color: #000000;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.card-anime:hover {
+  transform: translateY(-20px); 
+  transition: transform 0.3s ease;/* Efeito de hover */
+}
+
+.card-anime img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+.card-anime h4 {
+  color: #ffffff;
+  padding: 10px;
+  margin: 0;
+  text-align: center;
+}
+
+footer {
+  background-color: #00000065;
+  color: #ffffff;
+  text-align: left;
+  padding: 1px
+  
+}
+.top-right-image {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 100px; /* Ajuste o tamanho conforme necessário */
+  z-index: 101; /* Fica acima de outros elementos */
+  border-radius: 10px; /* Bordas arredondadas */
+  overflow: hidden; /* Para evitar que a imagem transborde */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+  transition: transform 0.3s ease; /* Transição suave para o hover */
+
+}
+
+.top-right-image img {
+  width: 75%; /* Largura total */
+  height: auto; /* Altura automática para manter a proporção */
+
+}
+
+
+
+

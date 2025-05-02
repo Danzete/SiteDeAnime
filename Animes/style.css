@@ -1,0 +1,124 @@
+/* Reset básico */
+body, h1, h2, h3, p, ul, li, a {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  
+}
+
+/* Corpo da página */
+body {
+  background-color: #000000da; /* Cor de fundo translúcida */
+  background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.856)), url('../Login/Assets/illustration-anime-city.jpg');
+  background-size: cover; /* Faz a imagem cobrir toda a tela */
+  background-repeat: no-repeat; /* Evita repetição da imagem */
+  background-attachment: fixed; /* Faz o fundo permanecer fixo ao rolar a página */
+  color: #33333327;
+  line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+  background-color: #00000000;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Estilo do cabeçalho */
+header .container {
+  display: flex;
+  align-items: right; /* Alinha os itens verticalmente ao centro */
+  justify-content: space-between; /* Espaça os itens igualmente (logo, título, imagem) */
+  padding: 0 20px;
+}
+
+header .logo img {
+  height: 80px; /* Define a altura da logo */
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  flex: 1; /* Faz o título ocupar o espaço central */
+}
+
+header .header-image img {
+  height: 100px; /* Define a altura da imagem no canto superior direito */
+  border-radius: 10px; /* Adiciona bordas arredondadas, se necessário */
+  right: 0; /* Alinha a imagem à direita */
+  position: absolute; /* Permite que a imagem flutue sobre o cabeçalho */
+  top: 20px; /* Distância do topo */
+  margin-right: 20px; /* Espaçamento à direita */ 
+  z-index: 10; /* Coloca a imagem acima de outros elementos */
+  opacity: 0.8; /* Define a opacidade da imagem */  
+}
+
+/* Container */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+.anime-list li img {
+  width: 100%; /* Faz a imagem ocupar toda a largura da div */
+  height: 150px; /* Define uma altura fixa */
+  object-fit: cover; /* Garante que a imagem seja cortada proporcionalmente para preencher o espaço */
+  border-radius: 5px; /* Adiciona bordas arredondadas para combinar com o design */
+}
+
+/* Lista de animes */
+.anime-list {
+  margin: 10px 0;
+}
+
+.anime-list ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 0;
+}
+
+.anime-list li {
+  background-color: rgba(0, 0, 0, 0.61);
+  border: 1px solid #00000038;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.336);
+  padding: 15px;
+  text-align: center;
+  width: 200px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.anime-list li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.anime-list li:hover {
+  cursor: pointer;
+}
+
+.anime-list li h4 {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: #ffffff;
+}
+
+/* Rodapé */
+footer {
+  background-color: #33333300;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 30px;
+}
+
+footer p {
+  font-size: 0.9rem;
+}
