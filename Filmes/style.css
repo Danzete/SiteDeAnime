@@ -7,8 +7,6 @@ body, h1, h2, h3, p, ul, li, a {
   font-family: 'Roboto', sans-serif;
   
 }
-
-/* Corpo da página */
 body {
   background-color: #000000da; /* Cor de fundo translúcida */
   background-image: linear-gradient(rgb(0, 0, 0), rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.856)), url('../Login/Assets/illustration-anime-city.jpg');
@@ -19,7 +17,6 @@ body {
   line-height: 1.6;
 }
 
-/* Cabeçalho */
 header {
   background-color: #00000000;
   color: white;
@@ -27,7 +24,6 @@ header {
   text-align: center;
 }
 
-/* Estilo do cabeçalho */
 header .container {
   display: flex;
   align-items: right; /* Alinha os itens verticalmente ao centro */
@@ -58,7 +54,6 @@ header .header-image img {
   opacity: 0.8; /* Define a opacidade da imagem */  
 }
 
-/* Container */
 .container {
   width: 90%;
   max-width: 1200px;
@@ -71,7 +66,6 @@ header .header-image img {
   border-radius: 5px; /* Adiciona bordas arredondadas para combinar com o design */
 }
 
-/* Lista de animes */
 .anime-list {
   margin: 10px 0;
 }
@@ -109,8 +103,6 @@ header .header-image img {
   margin-top: 10px;
   color: #ffffff;
 }
-
-/* Rodapé */
 footer {
   background-color: #33333300;
   color: white;
