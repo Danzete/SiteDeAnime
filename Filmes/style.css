@@ -22,6 +22,8 @@ header {
   color: white;
   padding: 20px 0;
   text-align: center;
+  position: relative; /* Permite que os filhos sejam posicionados em relação a ele */
+
 }
 
 header .container {
@@ -33,6 +35,8 @@ header .container {
 
 header .logo img {
   height: 80px; /* Define a altura da logo */
+  position: relative; /* Permite que a imagem flutue sobre o cabeçalho */
+  top: 20px; /* Distância do topo */
 }
 
 header h1 {
@@ -45,13 +49,12 @@ header h1 {
 
 header .header-image img {
   height: 100px; /* Define a altura da imagem no canto superior direito */
-  border-radius: 10px; /* Adiciona bordas arredondadas, se necessário */
+  border-radius: 0px; /* Adiciona bordas arredondadas, se necessário */
   right: 0; /* Alinha a imagem à direita */
   position: absolute; /* Permite que a imagem flutue sobre o cabeçalho */
   top: 20px; /* Distância do topo */
   margin-right: 20px; /* Espaçamento à direita */ 
-  z-index: 10; /* Coloca a imagem acima de outros elementos */
-  opacity: 0.8; /* Define a opacidade da imagem */  
+  
 }
 
 .container {
