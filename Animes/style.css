@@ -33,7 +33,14 @@ header .container {
 
 header .logo img {
   height: 80px; /* Define a altura da logo */
+  transition: transform 0.6s ease, background-color 0.3s ease, box-shadow 0.6s ease;  
 }
+header .logo:hover img {
+  transform: scale(1.3); /* Aumenta o logo ao passar o mouse */
+  transition: transform 0.8s ease; /* Transição suave */
+  cursor: pointer; /* Muda o cursor para indicar que é clicável */
+  text-decoration: none; /* Remove o sublinhado ao passar o mouse */
+}  
 
 header h1 {
   font-size: 2.5rem;
