@@ -43,7 +43,7 @@ header h1 {
   flex: 1; /* Faz o título ocupar o espaço central */
 }
 
-header .header-image img {
+header .jojoimg img {
   height: 100px; /* Define a altura da imagem no canto superior direito */
   border-radius: 10px; /* Adiciona bordas arredondadas, se necessário */
   right: 0; /* Alinha a imagem à direita */
@@ -59,7 +59,7 @@ header .header-image img {
   max-width: 1200px;
   margin: 0 auto;
 }
-.anime-list li img {
+.animelist li img {
   width: 100%; /* Faz a imagem ocupar toda a largura da div */
   height: 150px; /* Define uma altura fixa */
   object-fit: cover; /* Garante que a imagem seja cortada proporcionalmente para preencher o espaço */
@@ -67,11 +67,11 @@ header .header-image img {
 }
 
 
-.anime-list {
+.animelist {
   margin: 10px 0;
 }
 
-.anime-list ul {
+.animelist ul {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -79,7 +79,7 @@ header .header-image img {
   padding: 0;
 }
 
-.anime-list li {
+.animelist li {
   background-color: rgba(0, 0, 0, 0.61);
   border: 1px solid #00000038;
   border-radius: 8px;
@@ -90,16 +90,16 @@ header .header-image img {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.anime-list li:hover {
+.animelist li:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
 }
 
-.anime-list li:hover {
+.animelist li:hover {
   cursor: pointer;
 }
 
-.anime-list li h4 {
+.animelist li h4 {
   font-size: 1.2rem;
   margin-top: 10px;
   color: #ffffff;
@@ -127,7 +127,7 @@ footer p {
     font-size: 2rem; /* Reduz o tamanho da fonte do título */
   }
 
-  header .header-image img {
+  header .jojoimg img {
     height: 80px; /* Reduz a altura da imagem no cabeçalho */
     margin-right: 0; /* Remove a margem direita */
     top: 10px; /* Ajusta a posição do topo */

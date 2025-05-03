@@ -248,7 +248,7 @@ footer {
   height: auto;
 }
 
-.anime-list ul {
+.animelist ul {
   list-style: none;
   padding: 0;
   margin: 0;
@@ -258,7 +258,7 @@ footer {
   gap: 20px;
 }
 
-.anime-list ul li {
+.animelist ul li {
   background-color: #000;
   border-radius: 8px;
   overflow: hidden;
@@ -268,18 +268,18 @@ footer {
   text-align: center;
 }
 
-.anime-list ul li:hover {
+.animelist ul li:hover {
   transform: translateY(-10px);
 }
 
-.anime-list ul li img {
+.animelist ul li img {
   width: 100%; /* Faz a imagem ocupar toda a largura do contêiner */
   height: 200px; /* Define uma altura fixa */
   object-fit: cover; /* Garante que a imagem preencha o espaço sem distorcer */
   border-radius: 8px 8px 0 0; /* Bordas arredondadas no topo */
 }
 
-.anime-list ul li h4 {
+.animelist ul li h4 {
   color: #fff;
   padding: 10px;
   margin: 0;
